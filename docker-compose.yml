@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  campervanproject-backend:
+    image: ${DOCKER_REGISTRY-}campervanprojectbackend
+    build:
+      context: .
+      dockerfile: CampervanProject-Backend/Dockerfile
+    ports:
+      - 443:443
